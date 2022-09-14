@@ -5,3 +5,18 @@ services:
       context: ./2017-latest
       dockerfile: Dockerfile
     image: gcslaoli/mssql-server:2017-latest
+  mssql-2019-latest:
+    build:
+      context: ./2019-latest
+      dockerfile: Dockerfile
+    image: gcslaoli/mssql-server:2019-latest
+  mssql-2022-latest:
+    build:
+      context: ./2022-latest
+      dockerfile: Dockerfile
+    image: gcslaoli/mssql-server:2022-latest
+  mssql-latest:
+    build:
+      context: ./latest
+      dockerfile: Dockerfile
+    image: gcslaoli/mssql-server:latest
