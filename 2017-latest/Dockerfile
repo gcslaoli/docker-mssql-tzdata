@@ -7,3 +7,5 @@ RUN echo "${TZ}" > /etc/timezone \
     && apt update \
     && apt install -y tzdata \
     && rm -rf /var/lib/apt/lists/*
+
+USER root
